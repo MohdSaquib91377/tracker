@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+          <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+    
+   .container{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 1rem;
+       flex-direction: column;
+   } 
+    .my_row{
+
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        background-color: white;
+        padding: 1rem;
+        border-radius: .5rem;
+             box-shadow: -3px 1px 38px -12px rgba(0,0,0,0.74);
+            -webkit-box-shadow: -3px 1px 38px -12px rgba(0,0,0,0.74);
+            -moz-box-shadow: -3px 1px 38px -12px rgba(0,0,0,0.74);
+    }
+ 
+    .Navbar__TimeInput{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .Start__Date,.End__Date{
+        width: 4em!important;
+        height: 2em;
+
+    }
+    .left,.right{
+        display: flex;
+        margin-right: .8rem;
+    }
+@media (max-width:600px){
+.Navbar__TimeInput{
+    margin-top: .5rem;
+}
+}
+.col-md-4 > img{
+    margin-top: 1rem;
+    padding: .5rem;
+    width: 12.5rem;
+    height: 12.5rem;
+    box-shadow: -2px -1px 10px -3px rgba(0,0,0,0.75);
+-webkit-box-shadow: -2px -1px 10px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px -1px 16px 10px rgba(0,0,0,0.75);
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    margin: 0%;
+}
+img:hover{
+    transform: scale(1.1);
+    box-shadow: none;
+}
+img{
+    transition: all .5s linear;
+}
+.col-md-4{
+    overflow: hidden;
+}
+span{
+    font-size: 1rem;
+    font-weight: bolder;
+    color: lightgray;
+}
+
+/* change placeholder color */
+.form-control::-webkit-input-placeholder { color: lightgray; }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: lightgray; }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: lightgray; }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: lightgray; }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: lightgray; }  /* Microsoft Edge */
+</style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+            <nav class="container">
+                <div class="row my_row">
+                    <div class="Navbar__DateInput col-md-6 col-xs-6 col-sm-6 ">
+                            <input type="text" class="form-control" placeholder="mm/dd/yyy">
+                    </div>
+                    <div class="Navbar__TimeInput col-md-6 col-xs-6  col-sm-6 ">
+                        <div class="left">
+                            <span class="mr-1">From</span>
+                            <input class="form-control Start__Date form-select" placeholder="09:00">
+                            
+                            </input>
+                                
+                            
+                        </div>
+                        <div class="right">
+                            <span class="mr-1">To</span>
+                            <input type="text" class="form-control End__Date" placeholder="07:00">
+                               
+                        </div>
+               
+                    </div>
+                </div>
+                <div class="row cards">
+                    <div class="col-md-4 col-sm-6 col-6 col-lg-4 col-xl-2">
+                        <img src="./images/flooop.png" class="rounded img-thumbnail " alt="..." >
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-6 col-lg-4 col-xl-2">
+                        <img src="./images/shirt.jpg" class="rounded img-thumbnail" alt="...">
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-6 col-lg-4 col-xl-2">
+                        <img src="./images/shoes.jpg" class="rounded img-thumbnail" alt="..." >
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-6 col-lg-4 col-xl-2">
+                        <img src="./images/headphone.png" class="rounded img-thumbnail" alt="..." >
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-6 col-lg-4 col-xl-2">
+                        <img src="./images/shirt.jpg" class="rounded img-thumbnail" alt="...">
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-6 col-lg-4 col-xl-2">
+                        <img src="./images/shoes.jpg" class="rounded img-thumbnail" alt="..." >
+                    </div>
+                </div>  
+                
+            </nav> 
+            <!-- As a link
+
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+    </body>
+</html>
